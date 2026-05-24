@@ -22,31 +22,6 @@ h1 {
   font-weight: 800;
 }
 
-@media (max-width: 600px) {
-
-  .linha-dupla {
-
-    gap: 6px;
-
-  }
-
-  .linha-tripla {
-
-    gap: 6px;
-
-  }
-
-  input,
-  select {
-
-    padding: 10px;
-
-    font-size: 14px;
-
-  }
-
-}
-
 .container > .card-formulario label,
 #blocoEspecimes label,
 #campoOutroDocumento label,
@@ -59,7 +34,7 @@ h1 {
 input,
 select {
   width: 100%;
-  padding: 12px;
+  padding: 8px;
   margin-top: 5px;
   border-radius: 10px;
   border: 1px solid #ccc;
@@ -162,6 +137,7 @@ button:hover {
 
 .linha-tripla .campo {
   flex: 1;
+  min-width: 0;
 }
 .linha-dupla {
   display: flex;
@@ -170,6 +146,7 @@ button:hover {
 
 .linha-dupla .campo {
   flex: 1;
+  min-width: 0;
 }
 
 .checkbox-especie {
@@ -488,5 +465,30 @@ textarea {
     padding: 6px;
 
     min-height: 40px;
+
+}
+
+@media (max-width: 600px) {
+
+  .linha-dupla {
+
+    gap: 6px;
+
+  }
+
+  .linha-tripla {
+
+    gap: 6px;
+
+  }
+
+  input,
+  select {
+
+    padding: 10px;
+
+    font-size: 14px;
+
+  }
 
 }
