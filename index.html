@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BAE Mobile</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="topo-pagina">
+
+            <img
+                src="icons/dashboard.png"
+                class="icone-pagina"
+            >
+
+            <h1>RESUMO</h1>
+
+        </div>        
+
+        <div class="linha-dupla">
+
+            <div class="card-formulario">
+
+                <div class="card-dashboard-topo">
+
+                    <img
+                        src="icons/pendentes.png"
+                        class="icone-dashboard"
+                    >
+
+                    <div>
+
+                        <h2>Pendentes</h2>
+
+                        <p id="totalPendentes">0</p>
+
+                    </div>
+
+                </div>                
+
+            </div>
+
+            <div class="card-formulario">
+
+                <div class="card-dashboard-topo">
+
+                    <img
+                        src="icons/enviados.png"
+                        class="icone-dashboard"
+                    >
+
+                    <div>
+
+                        <h2>Enviados</h2>
+
+                        <p id="totalEnviados">0</p>
+
+                    </div>
+
+                </div>                
+
+            </div>
+
+        </div>
+
+        <div class="linha-dupla">
+
+            <div class="card-formulario">
+
+                <div class="card-dashboard-topo">
+
+                    <img
+                        src="icons/falhas.png"
+                        class="icone-dashboard"
+                    >
+
+                    <div>
+
+                        <h2>Falhas</h2>
+
+                        <p id="totalFalhas">0</p>
+
+                    </div>
+
+                </div>                
+
+            </div>
+
+            <div class="card-formulario">
+
+                <div class="card-dashboard-topo">
+
+                    <img
+                        src="icons/total.png"
+                        class="icone-dashboard"
+                    >
+
+                    <div>
+
+                        <h2>Total</h2>
+
+                        <p id="totalRegistros">0</p>
+
+                    </div>
+
+                </div>                
+
+            </div>
+
+        </div>
+
+            <div class="card-formulario card-sync">
+
+                <div class="card-dashboard-topo">
+
+                    <img
+                        src="icons/ultima_sincronizacao.png"
+                        class="icone-dashboard icone-sync"
+                    >
+
+                    <div>
+
+                        <h2>Última sincronização</h2>
+
+                        <p id="ultimaSync">Nunca</p>
+
+                    </div>
+
+                </div>
+
+            </div>        
+
+        <button onclick="sincronizarRegistros()">
+
+            Sincronizar Agora
+
+        </button>
+
+            <div class="card-formulario card-status">
+
+                <div id="statusConexao"></div>
+
+            </div>        
+
+    </div>
+
+<nav class="bottom-nav">
+
+    <a href="index.html" class="nav-item ativo">
+
+        <span class="nav-icon">🏠</span>
+
+        <span class="nav-texto">Início</span>
+
+    </a>
+
+    <a href="novo.html" class="nav-item">
+
+        <span class="nav-icon">➕</span>
+
+        <span class="nav-texto">Novo</span>
+
+    </a>
+
+    <a href="registros.html" class="nav-item">
+
+        <span class="nav-icon">📄</span>
+
+        <span class="nav-texto">Registros</span>
+
+    </a>
+
+</nav>
+
+    <script src="database.js"></script>
+    <script src="script.js"></script>
+    <script src="sync.js"></script>
+
+</body>
+
+</html>

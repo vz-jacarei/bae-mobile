@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registros</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="topo-pagina">
+
+            <img
+                src="icons/registros.png"
+                class="icone-pagina"
+            >
+
+            <h1>REGISTROS</h1>
+
+        </div>
+
+
+        <input
+                type="text"
+                id="buscaRegistro"
+                placeholder="Buscar por data, local ou status..."
+            >        
+
+        <div id="listaRegistros">
+
+        </div>
+
+    </div>
+
+    <nav class="bottom-nav">
+
+        <a href="index.html" class="nav-item">
+
+            <span class="nav-icon">🏠</span>
+
+            <span class="nav-texto">Início</span>
+
+        </a>
+
+        <a href="novo.html" class="nav-item">
+
+            <span class="nav-icon">➕</span>
+
+            <span class="nav-texto">Novo</span>
+
+        </a>
+
+        <a href="registros.html" class="nav-item ativo">
+
+            <span class="nav-icon">📄</span>
+
+            <span class="nav-texto">Registros</span>
+
+        </a>
+
+    </nav>
+
+<script src="database.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAE Mobile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+    <form id="formularioBAE">
+
+        <div class="topo-pagina">
+
+            <img
+                src="icons/novo.png"
+                class="icone-pagina"
+            >
+
+            <h1>BUSCA ATIVA</h1>
+
+        </div>
+
+    <div class="card-formulario">
+
+    <label>Data:</label>
+    <input type="date" id="data">
+    <br><br>
+    <label>Tipo Documento:</label>
+    <select id="tipo_documento">
+    <option value="">Selecione</option>
+    <option value="GPRO">GPRO</option>
+    <option value="SINAN">SINAN</option>
+    <option value="OUTROS">OUTROS</option>
+    </select>
+
+    <div id="campoOutroDocumento" style="display:none;">
+    <br><br>
+
+    <label>Especificar Documento:</label>
+
+    <input type="text" id="especificar_documento">
+    </div>
+
+    <br><br>
+
+    <label>Número Documento:</label>
+
+    <input type="text" id="numero_documento">
+
+    <br><br>
+    <label>Finalidade:</label>
+
+    <select id="finalidade">
+        <option value="">Selecione</option>
+        <option value="Monitoramento">Monitoramento</option>
+        <option value="Levantamento">Levantamento</option>
+        <option value="Outra">Outra</option>
+    </select>
+
+    <div id="campoOutraFinalidade" style="display:none;">
+
+        <label>Outra Finalidade:</label>
+
+        <input type="text" id="outra_finalidade">
+
+    </div>
+
+    <br><br>
+
+    </div>
+
+    <div class="card-formulario">
+
+    <label>Local:</label>
+    <input type="text" id="local">
+    <br><br>
+
+    <label>Responsável pelo Local:</label>
+    <input type="text" id="responsavel_local">
+    <br><br>
+
+    <label>Telefone:</label>
+    <input type="text" id="telefone_responsavel">
+
+    <br><br>
+
+    <label>Rua/Avenida:</label>
+    <input type="text" id="rua_avenida">
+
+    <br><br>
+
+    <label>Número/Complemento:</label>
+    <input type="text" id="numero_complemento">
+
+    <br><br>
+
+    <label>Bairro:</label>
+    <input type="text" id="bairro">
+    <br><br>
+
+    <label>Área m²:</label>
+    <input type="number" id="area_m2">
+
+    <br><br>
+
+    <div class="linha-tripla">
+
+    <div class="campo">
+        <label>Área:</label>
+        <input type="number" id="area">
+    </div>
+
+    <div class="campo">
+        <label>SC:</label>
+        <input type="number" id="sc">
+    </div>
+
+    <div class="campo">
+        <label>Quadra:</label>
+        <input type="number" id="quadra">
+    </div>
+    </div>
+    <br>
+
+
+    <div class="linha-gps">
+
+    <button type="button" class="botao-gps" id="btnGPS">
+        GPS
+    </button>
+
+    <div class="campo">
+
+        <label>Latitude:</label>
+
+        <input type="text" id="latitude">
+
+    </div>
+
+    <div class="campo">
+
+        <label>Longitude:</label>
+
+        <input type="text" id="longitude">
+
+    </div>
+
+    </div>
+    <br><br>
+    <label>Ambiente:</label>
+    <select id="ambiente">
+        <option value="">Selecione</option>
+        <option value="Interno">Interno</option>
+        <option value="Externo">Externo</option>
+        <option value="Interno/Externo">Interno/Externo</option>
+    </select>
+
+    <br><br>
+
+    </div>
+
+    <div class="card-formulario">
+
+    <div class="linha-dupla">
+
+        <div class="campo">
+        <label>Período:</label>
+
+        <select id="periodo">
+            <option value="">Selecione</option>
+            <option value="Matutino">Matutino</option>
+            <option value="Vespertino">Vespertino</option>
+            <option value="Noturno">Noturno</option>
+        </select>
+        </div>
+
+        <div class="campo">
+        <label>Estação:</label>
+
+        <select id="estacao">
+            <option value="">Selecione</option>
+            <option value="Verão">Verão</option>
+            <option value="Outono">Outono</option>
+            <option value="Inverno">Inverno</option>
+            <option value="Primavera">Primavera</option>
+        </select>
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <div class="linha-dupla">
+
+        <div class="campo">
+        <label>Temperatura:</label>
+        <input type="number" id="temperatura">
+        </div>
+
+        <div class="campo">
+        <label>Umidade:</label>
+        <input type="number" id="umidade">
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <div class="linha-dupla">
+
+    <div class="campo">
+
+        <label>Fase da Lua:</label>
+
+        <select id="lua">
+        <option value="">Selecione</option>
+        <option value="Nova">Nova</option>
+        <option value="Crescente">Crescente</option>
+        <option value="Cheia">Cheia</option>
+        <option value="Minguante">Minguante</option>
+        </select>
+
+    </div>
+
+    <div class="campo">
+
+        <label>Alteração Ambiental:</label>
+
+        <select id="alteracao_ambiente">
+        <option value="">Selecione</option>
+        <option value="Sim">Sim</option>
+        <option value="Não">Não</option>
+        </select>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    <div class="card-formulario">
+
+    <label>Espécimes Encontrados?</label>
+
+    <div class="switch-group">
+
+    <input type="radio" id="especimeSim" name="especimes_encontrados" value="Sim">
+
+    <label for="especimeSim" class="switch-button">
+        SIM
+    </label>
+
+    <input type="radio" id="especimeNao" name="especimes_encontrados" value="Não" checked>
+
+    <label for="especimeNao" class="switch-button">
+        NÃO
+    </label>
+
+    </div>
+
+    <div id="blocoEspecimes" style="display:none;">
+
+    <label>Número da Amostra:</label>
+    <input type="number" id="numero_amostra">
+
+    <br><br>
+
+    <div class="linha-tripla">
+
+        <div class="campo">
+        <label>Vivos:</label>
+        <input type="number" id="vivos">
+        </div>
+
+        <div class="campo">
+        <label>Mortos:</label>
+        <input type="number" id="mortos">
+        </div>
+
+        <div class="campo">
+        <label>Mortos no Local:</label>
+        <input type="number" id="mortos_local">
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="linha-dupla">
+
+        <div class="campo">
+        <label>Exúvias:</label>
+        <input type="number" id="exuvias">
+        </div>
+
+        <div class="campo">
+        <label>Fuga:</label>
+        <input type="number" id="fuga">
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <div class="linha-dupla">
+
+        <div class="campo">
+
+        <label class="checkbox-especie">
+        <input type="checkbox" id="tityus_serrulatus">
+        Tityus serrulatus
+        </label>
+
+        </div>
+
+        <div class="campo">
+
+        <label class="checkbox-especie">
+            <input type="checkbox" id="tityus_stigmurus">
+            Tityus stigmurus
+        </label>
+
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <div class="linha-dupla">
+
+        <div class="campo">
+
+        <label class="checkbox-especie">
+            <input type="checkbox" id="tityus_bahiensis">
+            Tityus bahiensis
+        </label>
+
+        </div>
+
+        <div class="campo">
+
+        <label class="checkbox-especie">
+            <input type="checkbox" id="outra_especie">
+            Outra espécie
+        </label>
+
+        </div>
+
+    </div>
+
+    <div id="campoOutraEspecie" style="display:none;">
+
+        <br><br>
+
+        <label>Descrição da Outra Espécie:</label>
+
+        <input type="text" id="descricao_outra_especie">
+
+    </div>
+
+    </div>
+
+    <br><br>
+    </div>
+
+
+    <div class="card-formulario">
+
+    <label>Observações:</label>
+
+    <textarea id="observacoes"></textarea>
+
+    <br><br>
+
+    <label>Descrição da Vistoria:</label>
+
+    <textarea id="descricao_vistoria"></textarea>
+
+    <br><br>
+
+    <label>Recomendações:</label>
+
+    <textarea id="recomendacoes"></textarea>
+
+    </div>
+
+    <div class="card-formulario">
+
+    <label>Motorista:</label>
+    <input type="text" id="motorista">
+
+    <br><br>
+
+    <label>Checagem Materiais Ida:</label>
+    <input type="text" id="checagem_materiais_ida">
+
+    <br><br>
+
+    <label>Checagem Materiais Volta:</label>
+    <input type="text" id="checagem_materiais_volta">
+
+    <br><br>
+
+    <label>Sistema Scorpio:</label>
+    <input type="text" id="sistema_scorpio">
+
+    <br><br>
+
+    <label>Relatório:</label>
+    <input type="text" id="relatorio">
+
+    </div>    
+
+    <button id="btnSalvar">Salvar</button>
+
+    </form>
+
+</div>
+
+<script src="database.js"></script>
+<script src="script.js"></script>
+
+<nav class="bottom-nav">
+
+    <a href="index.html" class="nav-item">
+
+        <span class="nav-icon">🏠</span>
+
+        <span class="nav-texto">Início</span>
+
+    </a>
+
+    <a href="novo.html" class="nav-item ativo">
+
+        <span class="nav-icon">➕</span>
+
+        <span class="nav-texto">Novo</span>
+
+    </a>
+
+    <a href="registros.html" class="nav-item">
+
+        <span class="nav-icon">📄</span>
+
+        <span class="nav-texto">Registros</span>
+
+    </a>
+
+</nav>
+
+</body>
+</html>
