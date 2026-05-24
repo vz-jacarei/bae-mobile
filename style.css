@@ -433,3 +433,27 @@ textarea {
     object-fit: contain;
 
 }
+
+@media (max-width: 600px) {
+
+  .icone-dashboard {
+
+    width: 52px;
+
+    height: 52px;
+
+  }
+
+  .card-dashboard-topo h2 {
+
+    font-size: 18px;
+
+  }
+
+  .card-formulario {
+
+    padding: 15px;
+
+  }
+
+}
