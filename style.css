@@ -457,3 +457,11 @@ textarea {
   }
 
 }
+
+.card-dashboard {
+
+    padding: 8px;
+
+    min-height: 120px;
+
+}
