@@ -1,0 +1,16 @@
+{
+  "name": "BAE Mobile",
+  "short_name": "BAE",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f4f6f9",
+  "theme_color": "#1047bd",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icons/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
