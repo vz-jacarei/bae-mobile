@@ -22,6 +22,31 @@ h1 {
   font-weight: 800;
 }
 
+@media (max-width: 600px) {
+
+  .linha-dupla {
+
+    gap: 6px;
+
+  }
+
+  .linha-tripla {
+
+    gap: 6px;
+
+  }
+
+  input,
+  select {
+
+    padding: 10px;
+
+    font-size: 14px;
+
+  }
+
+}
+
 .container > .card-formulario label,
 #blocoEspecimes label,
 #campoOutroDocumento label,
