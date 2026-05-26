@@ -1,4 +1,4 @@
-const CACHE_NAME = "bae-mobile-v1";
+const CACHE_NAME = "bae-mobile-v2";
 
 const arquivos = [
 
@@ -47,6 +47,26 @@ self.addEventListener("install", event => {
 });
 
 self.addEventListener("fetch", event => {
+
+    const url = new URL(event.request.url);
+
+    if (url.pathname.endsWith(".html")) {
+
+        event.respondWith(
+
+            caches.match(url.pathname)
+
+                .then(response => {
+
+                    return response || fetch(event.request);
+
+                })
+
+        );
+
+        return;
+
+    }
 
     event.respondWith(
 
