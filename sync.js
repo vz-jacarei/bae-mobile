@@ -1,4 +1,13 @@
 async function sincronizarRegistros() {
+    if (!navigator.onLine) {
+
+    alert(
+        "Sem conexão com a internet."
+    );
+
+    return;
+
+}
 
     await abrirBanco();
 
