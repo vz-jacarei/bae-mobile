@@ -1,4 +1,4 @@
-const CACHE_NAME = "bae-mobile-v2";
+const CACHE_NAME = "bae-mobile-v3";
 
 const arquivos = [
 
