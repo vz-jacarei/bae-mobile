@@ -492,3 +492,11 @@ textarea {
   }
 
 }
+
+.versao-app {
+    text-align: center;
+    color: #777;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
